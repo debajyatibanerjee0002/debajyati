@@ -268,8 +268,8 @@ section .title::after{
 }
 .services .title::after,
 .teams .title::after{
-    background: #111;
-    content: "what I've developed";
+    /* background: #111;
+    content: "what I've developed"; */
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -392,6 +392,9 @@ section .title::after{
 }
 .skills-content .right .sql::before{
     width: 60%;
+}
+.skills .skills-content .right i{
+    font-size: 250%;
 }
 
 /* teams section styling */
