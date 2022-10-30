@@ -268,8 +268,13 @@ section .title::after{
 }
 .services .title::after,
 .teams .title::after{
+<<<<<<< HEAD
     /* background: #111;
     content: "what I've developed"; */
+=======
+    /*background: #111;
+    content: "what I've developed";*/
+>>>>>>> de83cb025adcd673296de36bcad6e4c190d99b66
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
