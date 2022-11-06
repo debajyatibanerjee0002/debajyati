@@ -10,6 +10,25 @@
 html{
     scroll-behavior: smooth;
 }
+#preloader{
+	background: #0D0121 url(images/preloder.gif) no-repeat center center;
+	background-size: 30%;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 1100;
+}
+.reveal{
+	position: relative;
+	transform: translateY(80px);
+	opacity: 0;
+	transition: all 1s ease;
+}
+.reveal.active{
+	transform: translateY(0px);
+	opacity: 1;
+	z-index: 2;
+}
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
@@ -28,11 +47,11 @@ html{
 
 /* all similar content styling codes */
 section{
-    padding: 100px 0;
+    padding: 0 0;
 }
 .max-width{
     max-width: 1300px;
-    padding: 0 80px;
+    padding: 30px 80px;
     margin: auto;
 }
 .about, .services, .skills, .teams, .contact, footer{
@@ -607,7 +626,7 @@ footer span a:hover{
 
 @media (max-width: 991px) {
     .max-width{
-        padding: 0 50px;
+        padding: 30px 50px;
     }
 }
 @media (max-width: 947px){
@@ -677,7 +696,7 @@ footer span a:hover{
 
 @media (max-width: 690px) {
     .max-width{
-        padding: 0 23px;
+        padding: 20px 23px;
     }
     .home .home-content .text-2{
         font-size: 60px;
@@ -699,10 +718,14 @@ footer span a:hover{
     }
     .home .home-content .text-3{
         font-size: 27px;
+        margin-bottom: 30px;
+        height: 50px;
     }
     .about .about-content .right .text,
     .skills .skills-content .left .text{
         font-size: 19px;
+        margin-bottom: 30px;
+        height: 50px;
     }
     .contact .right form .fields{
         flex-direction: column;
